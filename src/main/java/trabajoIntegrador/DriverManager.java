@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class DriverManager {
-    private static WebDriver driver;
+    public static WebDriver driver;
     private static WebDriverWait wait;
 
     public static void create(String browser){
