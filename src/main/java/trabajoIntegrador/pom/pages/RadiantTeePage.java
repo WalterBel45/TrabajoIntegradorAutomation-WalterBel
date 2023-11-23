@@ -1,12 +1,7 @@
 package trabajoIntegrador.pom.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import trabajoIntegrador.DriverActions;
 
-import java.util.List;
-
-import static trabajoIntegrador.DriverManager.driver;
 
 public class RadiantTeePage {
 

@@ -1,10 +1,7 @@
 package trabajoIntegrador;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import trabajoIntegrador.pom.pages.HomePage;
 import trabajoIntegrador.pom.services.HomeService;
 import trabajoIntegrador.pom.services.RadiantTeeService;
 
