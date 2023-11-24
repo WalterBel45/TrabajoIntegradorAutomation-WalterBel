@@ -16,7 +16,7 @@ public class CompraTest {
     }
 
     @Test
-    public void compraCorrecta () {
+    public void compraCorrecta () throws InterruptedException {
         HomeService homeService = new HomeService();
         homeService.selectItem("Radiant Tee");
 
@@ -31,7 +31,7 @@ public class CompraTest {
 
         ShippingService shippingService = new ShippingService();
         shippingService.completeInformation();
-
+Thread.sleep(5000);
     }
 
 

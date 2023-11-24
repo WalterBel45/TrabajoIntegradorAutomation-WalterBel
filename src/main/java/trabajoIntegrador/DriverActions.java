@@ -2,9 +2,10 @@ package trabajoIntegrador;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public class DriverActions {
-    public static void click(By element){
+    public static void click(By element) {
         DriverManager.getWait().until(
                 ExpectedConditions.and(
                         ExpectedConditions.presenceOfElementLocated(element),
@@ -15,7 +16,7 @@ public class DriverActions {
         DriverManager.getDriver().findElement(element).click();
     }
 
-    public static void insertText(By element, String text){
+    public static void insertText(By element, String text) {
         DriverManager.getWait().until(
                 ExpectedConditions.and(
                         ExpectedConditions.presenceOfElementLocated(element),
