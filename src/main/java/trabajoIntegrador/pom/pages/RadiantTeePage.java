@@ -13,6 +13,8 @@ private By select_quantity = new By.ById("qty");
 
 private By add_to_cart_button = new By.ById("product-addtocart-button");
 
+private By shopping_cart = new By.ByLinkText("shopping cart");
+
 
 
     public By getSelect_size() {
@@ -25,6 +27,10 @@ private By add_to_cart_button = new By.ById("product-addtocart-button");
 
     public By getSelect_quantity() {
         return select_quantity;
+    }
+
+    public By getShopping_cart() {
+        return shopping_cart;
     }
 
     public By getAdd_to_cart_button() {
