@@ -1,11 +1,7 @@
 package trabajoIntegrador.pom.pages;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.Select;
 
-import java.util.List;
-
-import static trabajoIntegrador.DriverManager.driver;
 
 public class ShippingPage {
     private By complete_email = new By.ByXPath("(//input[@id='customer-email'])[1]");
@@ -19,6 +15,16 @@ public class ShippingPage {
     private By complete_street = new By.ByName("street[0]");
 
     private By complete_city = new By.ByName("city");
+
+    private By complete_province = new By.ByName("region");
+
+    private By complete_zip_code = new By.ByName("postcode");
+
+    private By complete_phone_number = new By.ByName("telephone");
+
+    private By shipping_method_button = new By.ByCssSelector("input[value='flatrate_flatrate']");
+
+    private By next_button = new By.ByCssSelector(".button.action.continue.primary");
 
 
 
@@ -45,4 +51,23 @@ public class ShippingPage {
         return complete_city;
     }
 
+    public By getComplete_province() {
+        return complete_province;
+    }
+
+    public By getComplete_zip_code() {
+        return complete_zip_code;
+    }
+
+    public By getComplete_phone_number() {
+        return complete_phone_number;
+    }
+
+    public By getShipping_method_button() {
+        return shipping_method_button;
+    }
+
+    public By getNext_button() {
+        return next_button;
+    }
 }
