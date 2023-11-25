@@ -1,11 +1,10 @@
 package trabajoIntegrador;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import trabajoIntegrador.pom.services.HomeService;
-import trabajoIntegrador.pom.services.RadiantTeeService;
-import trabajoIntegrador.pom.services.ShippingService;
-import trabajoIntegrador.pom.services.ShoppingCartService;
+import trabajoIntegrador.pom.services.*;
 
 public class CompraTest {
 
@@ -16,7 +15,7 @@ public class CompraTest {
     }
 
     @Test
-    public void compraCorrecta () throws InterruptedException {
+    public void compraCorrecta () {
         HomeService homeService = new HomeService();
         homeService.selectItem("Radiant Tee");
 
@@ -31,7 +30,27 @@ public class CompraTest {
 
         ShippingService shippingService = new ShippingService();
         shippingService.completeInformation();
-Thread.sleep(5000);
+        shippingService.nextButton();
+
+        CheckoutService checkoutService = new CheckoutService();
+        checkoutService.pressPlacerOrderButton();
+
+        ThankYouService thankYouService = new ThankYouService();
+
+        /*Assert.assertTrue(
+                thankYouService.getTitle().contains("Thank you for your purchase!"),
+                "El title no contiene Thank you for purchase!"
+        );
+
+        Assert.assertTrue(
+                thankYouService.buttonContinueShoppingIsEnabled(),
+                "El boton Continue Shopping no esta habilitado"
+        );
+        //El boton Back Home esta habilitado.
+        Assert.assertTrue(
+                thankYouService.buttonCreateAnAccountIsVisible(),
+                "El boton Create an account no esta visible"
+        ); */
     }
 
 
