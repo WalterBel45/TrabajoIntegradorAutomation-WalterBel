@@ -6,14 +6,14 @@ public class HomePage {
 
     private String urlHomePage = "https://magento.softwaretestingboard.com";
 
-    private By get_item_name = new By.ByCssSelector("a[title='Radiant Tee']");
+    private By get_item = new By.ByCssSelector("a[title='Radiant Tee']");
 
 
     public String getUrlHomePage() {
         return urlHomePage;
     }
 
-    public By getGet_item_name() {
-        return get_item_name;
+    public By getGet_item() {
+        return get_item;
     }
 }

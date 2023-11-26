@@ -18,9 +18,9 @@ public class RadiantTeeService {
 
     public void choosePreferences () {
 
-        DriverActions.click(this.radiantTeePage.getSelect_size());
-        DriverActions.click(this.radiantTeePage.getSelect_color());
-        DriverActions.insertText(this.radiantTeePage.getSelect_quantity(), "2");
+        DriverActions.click(this.radiantTeePage.getGet_size());
+        DriverActions.click(this.radiantTeePage.getGet_color());
+        DriverActions.insertText(this.radiantTeePage.getGet_quantity(), "2");
     }
 
     public void pressButton() {

@@ -12,8 +12,8 @@ public HomeService() {
    this.homepage = new HomePage();
 }
 
-   public void selectItem (String itemName) {
-           DriverActions.click(this.homepage.getGet_item_name());
+   public void selectItem () {
+           DriverActions.click(this.homepage.getGet_item());
     }
 }
 

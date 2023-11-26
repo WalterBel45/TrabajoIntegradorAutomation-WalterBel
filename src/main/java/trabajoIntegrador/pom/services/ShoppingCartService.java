@@ -13,6 +13,6 @@ public class ShoppingCartService {
     }
 
     public void proceedToCheckout () {
-        DriverActions.click(this.shoppingCartPage.getProceed_To_Checkout());
+        DriverActions.click(this.shoppingCartPage.getGet_proceed_To_Checkout_button());
     }
 }

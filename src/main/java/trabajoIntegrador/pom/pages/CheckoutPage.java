@@ -4,15 +4,15 @@ import org.openqa.selenium.By;
 
 public class CheckoutPage {
 
-    private By button_place_order = new By.ByXPath("//button[@title='Place Order']");
+    private By get_place_order_button = new By.ByXPath("//button[@title='Place Order']");
 
-    private By details = new By.ByXPath("//div[@class='billing-address-details']");
+    private By get_details = new By.ByXPath("//div[@class='billing-address-details']");
 
-    public By getButton_place_order() {
-        return button_place_order;
+    public By getGet_place_order_button() {
+        return get_place_order_button;
     }
 
-    public By getDetails() {
-        return details;
+    public By getGet_details() {
+        return get_details;
     }
 }
